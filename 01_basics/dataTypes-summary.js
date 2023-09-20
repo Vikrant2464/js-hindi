@@ -30,9 +30,35 @@ const myFunction = function() {
     console.log("Hello world");
 }
 
-console.log(typeof bigNumber);  //undefined
-console.log(typeof outsideTemp);  //object
-console.log(typeof scoreValue);  //number
-console.log(typeof myFunction);  //function
-console.log(typeof anotherId);  //symbol
+// console.log(typeof bigNumber);  //undefined
+// console.log(typeof outsideTemp);  //object
+// console.log(typeof scoreValue);  //number
+// console.log(typeof myFunction);  //function
+// console.log(typeof anotherId);  //symbol
 
+
+//******************* Memory ************************/
+
+// Stack (Primitive),    Heap (Non-Primitive)
+// In stack we get copy of the value and change occur in that value
+let myName = "vikrant"
+
+let anotherName = myName
+anotherName = "Mr.singh"
+
+console.log(anotherName);
+console.log(myName);
+
+
+// In Heap we get refrence that means changes occurs in original value
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "vik@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
