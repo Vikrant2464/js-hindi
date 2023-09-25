@@ -5,7 +5,7 @@ accountCity = "Jaipur"
 let accountState;
 
 /*
-prefer not ot use block
+prefer not to use block
 because of issue in block scope and functional scope.
 */
 
